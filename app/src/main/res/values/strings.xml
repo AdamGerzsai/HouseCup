@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HouseCup</string>
+    <string name="button1">+50</string>
+    <string name="button2">+10</string>
+    <string name="button3">+5</string>
+    <string name="button4">-5</string>
+    <string name="button5">-10</string>
+    <string name="zero">0</string>
+    <string name="cupLogo">House cup logo</string>
+    <string name="RavenclawLogo">RavenclawLogo</string>
+    <string name="HufflepuffLogo">HufflepuffLogo</string>
+    <string name="GryffindorLogo">GryffindorLogo</string>
+    <string name="SlytherinLogo">SlytherinLogo</string>
+    <string name="QuiddichLogo">QuiddichLogo</string>
+    <string name="reset">new year</string>
+</resources>

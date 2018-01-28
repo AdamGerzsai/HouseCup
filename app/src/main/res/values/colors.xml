@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pcolorPrimary">#000</color>
+    <color name="pcolorPrimaryDark">#111</color>
+    <color name="pcolorAccent">#FF4081</color>
+    <color name="buttonColor">#00B200</color>
+    <color name="button2Color">#cc0000</color>
+    <color name="grey1">#50ffffff</color>
+    <color name="grey2">#50ffdfff</color>
+    <color name="grey3">#808080</color>
+    <color name="grey05">#00cccccc</color>
+    <color name="lilac">#cc66ff</color>
+    <color name="black1">#1f221f</color>
+    <color name="black2">#992e2e2e</color>
+    <color name="white">#fff</color>
+</resources>

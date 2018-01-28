@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--<ScrollView--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--tools:context="com.example.android.housecup.MainActivity"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414141"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.android.housecup.MainActivity">
+
+    <!--"house cup text"-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/cupLogo"
+        android:src="@drawable/cup_text" />
+
+    <!--houses pictures-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/HufflepuffLogo"
+            android:src="@drawable/huffle" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/GryffindorLogo"
+            android:src="@drawable/griff" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/SlytherinLogo"
+            android:src="@drawable/slit" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/RavenclawLogo"
+            android:src="@drawable/raven" />
+
+    </LinearLayout>
+
+    <!--houses points-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hufflepuff_score"
+            style="@style/points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero" />
+
+        <TextView
+            android:id="@+id/gryffindor_score"
+            style="@style/points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero" />
+
+        <TextView
+            android:id="@+id/slytherin_score"
+            style="@style/points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero" />
+
+        <TextView
+            android:id="@+id/ravenclaw_score"
+            style="@style/points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero" />
+
+    </LinearLayout>
+
+    <!--button table-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/cupLogo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/house_cup2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <!--buttons1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:background="@drawable/custom_button"
+                            style="@style/button"
+                            android:onClick="add50toHufflepuff"
+                            android:text="@string/button1" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add10toHufflepuff"
+                            android:text="@string/button2" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add5toHufflepuff"
+                            android:text="@string/button3" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct5fromHufflepuff"
+                            android:text="@string/button4" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct10fromHufflepuff"
+                            android:text="@string/button5" />
+
+                    </LinearLayout>
+
+                    <!--buttons2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add50toGryffindor"
+                            android:text="@string/button1" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add10toGryffindor"
+                            android:text="@string/button2" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add5toGryffindor"
+                            android:text="@string/button3" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct5fromGryffindor"
+                            android:text="@string/button4" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct10fromGryffindor"
+                            android:text="@string/button5" />
+                    </LinearLayout>
+
+                    <!--buttons3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add50toSlytherin"
+                            android:text="@string/button1" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add10toSlytherin"
+                            android:text="@string/button2" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add5toSlytherin"
+                            android:text="@string/button3" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct5fromSlytherin"
+                            android:text="@string/button4" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct10fromSlytherin"
+                            android:text="@string/button5" />
+
+                    </LinearLayout>
+
+                    <!--buttons4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add50toRavenclaw"
+                            android:text="@string/button1" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add10toRavenclaw"
+                            android:text="@string/button2" />
+
+                        <Button
+                            style="@style/button"
+                            android:background="@drawable/custom_button"
+                            android:onClick="add5toRavenclaw"
+                            android:text="@string/button3" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct5fromRavenclaw"
+                            android:text="@string/button4" />
+
+                        <Button
+                            style="@style/button2"
+                            android:background="@drawable/custom_button"
+                            android:onClick="deduct10fromRavenclaw"
+                            android:text="@string/button5" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lilac"
+                    android:onClick="reset"
+                    android:text="@string/reset"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
